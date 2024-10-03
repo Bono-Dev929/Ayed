@@ -85,4 +85,6 @@ void mostrarVecorPersona(Persona* v, int t){
         mostrarPersona(v[i]);
     }
 };
-void liberarVectorPersona(Persona* v);
+void liberarVectorPersona(Persona* v){
+    free(v);
+};
