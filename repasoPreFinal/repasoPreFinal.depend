@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1727971071 source:c:\users\user\escritorio\lucas\1. universidad\3. cursadas\algoritmos y estructura de datos\nueva carpeta\repasoprefinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Lista.h"
+	"Persona.h"
+
+1727970414 source:c:\users\user\escritorio\lucas\1. universidad\3. cursadas\algoritmos y estructura de datos\nueva carpeta\repasoprefinal\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Persona.h"
+
+1727968282 c:\users\user\escritorio\lucas\1. universidad\3. cursadas\algoritmos y estructura de datos\nueva carpeta\repasoprefinal\persona.h
+
+1727800405 source:c:\users\user\escritorio\lucas\1. universidad\3. cursadas\algoritmos y estructura de datos\nueva carpeta\repasoprefinal\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"Nodo.h"
+
+1727795098 c:\users\user\escritorio\lucas\1. universidad\3. cursadas\algoritmos y estructura de datos\nueva carpeta\repasoprefinal\nodo.h
+
+1727882026 source:c:\users\user\escritorio\lucas\1. universidad\3. cursadas\algoritmos y estructura de datos\nueva carpeta\repasoprefinal\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1727871185 c:\users\user\escritorio\lucas\1. universidad\3. cursadas\algoritmos y estructura de datos\nueva carpeta\repasoprefinal\lista.h
+	"Nodo.h"
+
