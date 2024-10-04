@@ -29,25 +29,25 @@ void insertarUltimo(Lista l, Dato d) {
     Nodo ult = crearNodo(d, NULL);
     Nodo actual = l->primero;
 
-    // Si la lista está vacía, inserta al principio
+    // Si la lista estÃ¡ vacÃ­a, inserta al principio
     if (actual == NULL) {
         printf("Se agrega al principio\n");
         l->primero = ult;
     } else {
-        // Recorre hasta encontrar el último nodo
+        // Recorre hasta encontrar el Ãºltimo nodo
         while (getSiguiente(actual) != NULL) {
             printf("Buscando\n");
             actual = getSiguiente(actual);
         }
-        // Conecta el último nodo con el nuevo nodo
+        // Conecta el Ãºltimo nodo con el nuevo nodo
         setSiguiente(actual, ult);
     }
 }
 
 void insertarPosicion(Lista l, Dato d, int pos) {
     if (pos < 0 || pos > obtenerTamanio(l)) {
-        printf("Error: posición fuera de rango\n");
-        return;  // Verifica que 'pos' esté dentro de los límites válidos
+        printf("Error: posiciÃ³n fuera de rango\n");
+        return;  // Verifica que 'pos' estÃ© dentro de los lÃ­mites vÃ¡lidos
     }
     if (pos == 0) {
         insertarPrimero(l, d);  // Inserta al inicio
@@ -55,11 +55,11 @@ void insertarPosicion(Lista l, Dato d, int pos) {
         insertarUltimo(l, d);   // Inserta al final
     } else {
         Nodo actual = l->primero;
-        // Recorre hasta el nodo anterior a la posición 'pos'
+        // Recorre hasta el nodo anterior a la posiciÃ³n 'pos'
         for (int i = 0; i < pos - 1; i++) {  // 'i' comienza en 0 porque asumes base-0
             actual = getSiguiente(actual);  // Avanza al siguiente nodo
         }
-        // Inserta el nuevo nodo en la posición correcta
+        // Inserta el nuevo nodo en la posiciÃ³n correcta
         Nodo nuevoNodo = crearNodo(d, getSiguiente(actual));  // Conectar el nuevo nodo con el siguiente
         setSiguiente(actual, nuevoNodo);  // Conectar 'actual' con el nuevo nodo
     }
@@ -80,12 +80,12 @@ Dato obtenerPosicion(Lista l, int pos) {
     Nodo actual = l->primero;
 
     if (pos < 0 || pos > obtenerTamanio(l)) {
-        printf("Error: posición fuera de rango.\n");
+        printf("Error: posiciÃ³n fuera de rango.\n");
     }else{
         if(pos == 0){
             d = getDato(actual);
         }else{
-            for (int i = 0; i < pos; i++) {  // Manejar posición base-1 correctamente
+            for (int i = 0; i < pos; i++) {  // Manejar posiciÃ³n base-1 correctamente
                 actual = getSiguiente(actual);
             }
 
@@ -149,6 +149,25 @@ Dato buscarElemento(Lista l, Dato d, int(*funcionCallBack)(Dato,Dato)){
     }
     return aux;
 };
+
+void ordenarLista(Lista l, int(*comparar)(Dato,Dato)){
+    int permutacion=0;
+    Nodo actual= l->primero;
+    Nodo next = getSiguiente(actual);
+    do{
+        permutacion = 0;
+        actual= l->primero;
+
+        while(actual!=NULL){
+            
+            if((*comparar)(getDato
+            actual=getSiguiente(actual)
+        }
+
+
+        
+    }while(permutacion !=0)
+}
 
 void mostrarLista(Lista l, void(*funcionCallBack)(Dato)){
     Nodo actual = l->primero;
